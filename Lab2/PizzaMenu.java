@@ -19,7 +19,7 @@ public class PizzaMenu extends JFrame {
 		bgSize.add(sizeJRB1); //adds the buttons to the group
 		bgSize.add(sizeJRB2);
 		bgSize.add(sizeJRB3);
-		add(sizePanel, BorderLayout.CENTER); adds the size panel to the Border Layout
+		add(sizePanel, BorderLayout.CENTER); //adds the size panel to the Border Layout
 	
 
 	}
