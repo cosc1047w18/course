@@ -16,7 +16,6 @@ public class Main extends JFrame implements ActionListener {
     private JRadioButton nullPointerButton;
     
     
-    private JRadioButton overflowButton;
     
     private JRadioButton throwMyButton;
     
@@ -32,7 +31,6 @@ public class Main extends JFrame implements ActionListener {
         badCastButton = addRadioButton("Bad cast", g, p);
         arrayBoundsButton = addRadioButton("Array bounds", g, p);
         nullPointerButton = addRadioButton("Null pointer", g, p);
-        overflowButton = addRadioButton("Overflow", g, p);
         throwMyButton = addRadioButton("Throw My own Exception", g, p);
         getContentPane().add(p);
     }
@@ -61,8 +59,6 @@ public class Main extends JFrame implements ActionListener {
             } else if (source == nullPointerButton) {
                 //cause a null pointer exception
                 
-            } else if (source == overflowButton) {
-                //cause an overflow exception
                 
             } else if (source == throwMyButton) {
                 //create your own custom exception and throw it, and handle it
