@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 
-public class Lab4 extends JFrame implements ActionListener {
+public class Main extends JFrame implements ActionListener {
     private double[] a;
     private JRadioButton divideByZeroButton;
     
@@ -21,7 +21,7 @@ public class Lab4 extends JFrame implements ActionListener {
     
     private JRadioButton throwMyButton;
     
-    public Lab4() {
+    public Main() {
         
         // Create a JPanel and GridLayout
         JPanel p = new JPanel();
@@ -80,7 +80,7 @@ public class Lab4 extends JFrame implements ActionListener {
     }
     
     public static void main(String[] args) {
-        JFrame frame = new Lab4();
+        JFrame frame = new Main();
         frame.setSize(200, 200);
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
