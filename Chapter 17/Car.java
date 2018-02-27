@@ -55,7 +55,7 @@ public class Car {
     }
 
     public static void main(String[] args) throws IOException {
-        CarList clist = new CarList("carfile.txt");
+        CarList clist = new CarList("carlist.txt");
         FileWriter fw = new FileWriter("mostexpensive.txt");
         PrintWriter pw = new PrintWriter(fw);
         pw.println(clist.mostExpensiveCar());
