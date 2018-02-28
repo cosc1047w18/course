@@ -2,19 +2,17 @@ package javaapplication2;
 
 import java.io.*;
 
-public class BufferedReaderWriterBobExample {
+public class BufferedReaderWriterBobExample throws IOException {
 
     public static void main(String[] args) {
         File file = new File("bobs.txt");
 
-        FileReader fileReader = null;
-        BufferedReader bufferedReader = null;
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
 
         try {
-            fileReader = new FileReader(file);
-            bufferedReader = new BufferedReader(fileReader);
             fileWriter = new FileWriter("isBobs.txt");
             bufferedWriter = new BufferedWriter(fileWriter);
             String line = null;
