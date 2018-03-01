@@ -1,54 +1,75 @@
+package javaapplication2;
+
 public abstract class GeometricObject {
-  private String color = "white";
-  private boolean filled;
-  private java.util.Date dateCreated;
 
-  /** Construct a default geometric object */
-  protected GeometricObject() {
-    dateCreated = new java.util.Date();
-  }
+    private String color = "white";
+    private boolean filled;
+    private java.util.Date dateCreated;
 
-  /** Construct a geometric object with color and filled value */
-  protected GeometricObject(String color, boolean filled) {
-    dateCreated = new java.util.Date();
-    this.color = color;
-    this.filled = filled;
-  }
+    /**
+     * Construct a default geometric object
+     */
+    protected GeometricObject() {
+        dateCreated = new java.util.Date();
+    }
 
-  /** Return color */
-  public String getColor() {
-    return color;
-  }
+    /**
+     * Construct a geometric object with color and filled value
+     */
+    protected GeometricObject(String color, boolean filled) {
+        dateCreated = new java.util.Date();
+        this.color = color;
+        this.filled = filled;
+    }
 
-  /** Set a new color */
-  public void setColor(String color) {
-    this.color = color;
-  }
+    /**
+     * Return color
+     */
+    public String getColor() {
+        return color;
+    }
 
-  /** Return filled. Since filled is boolean,
-   *  the get method is named isFilled */
-  public boolean isFilled() {
-    return filled;
-  }
+    /**
+     * Set a new color
+     */
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-  /** Set a new filled */
-  public void setFilled(boolean filled) {
-    this.filled = filled;
-  }
+    /**
+     * Return filled. Since filled is boolean, the get method is named isFilled
+     */
+    public boolean isFilled() {
+        return filled;
+    }
 
-  /** Get dateCreated */
-  public java.util.Date getDateCreated() {
-    return dateCreated;
-  }
+    /**
+     * Set a new filled
+     */
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
 
-  @Override
-  public String toString() {
-    return "created on " + dateCreated + "\ncolor: " + color +
-      " and filled: " + filled;
-  }
+    /**
+     * Get dateCreated
+     */
+    public java.util.Date getDateCreated() {
+        return dateCreated;
+    }
 
-  /** Abstract method getArea */
-  public abstract double getArea();
+    @Override
+    public String toString() {
+        return "created on " + dateCreated + "\ncolor: " + color
+                + " and filled: " + filled;
+    }
 
-  /** Abstract method getPerimeter */
-  public abstract double getPerimeter();
+    /**
+     * Abstract method getArea
+     */
+    public abstract double getArea();
+
+    /**
+     * Abstract method getPerimeter
+     */
+    public abstract double getPerimeter();
+}
