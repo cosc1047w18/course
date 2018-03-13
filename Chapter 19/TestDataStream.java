@@ -1,4 +1,4 @@
-package javaapplication;
+package javaapplication2;
 
 import java.io.*;
 
@@ -19,5 +19,16 @@ public class TestDataStream {
 
         // Close output stream
         output.close();
+        
+            // Create an input stream for file temp.dat
+    DataInputStream input
+                = new DataInputStream(new FileInputStream("temp.dat"));
+
+        // Read student test scores from the file
+        System.out.println(input.readUTF() + " " + input.readDouble());
+        System.out.println(input.readUTF() + " " + input.readDouble());
+        System.out.println(input.readUTF() + " " + input.readDouble());
+
+
     }
 }
