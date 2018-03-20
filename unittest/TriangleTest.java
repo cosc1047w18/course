@@ -1,9 +1,5 @@
 package unittestexample;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
 import junit.framework.TestCase;
 
 public class TriangleTest extends TestCase {
